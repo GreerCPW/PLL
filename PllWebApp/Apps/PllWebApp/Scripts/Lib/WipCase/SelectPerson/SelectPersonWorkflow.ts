@@ -1,6 +1,6 @@
 import { Awaitable } from "@jasonbenfield/sharedwebapp/Awaitable";
 import { SingleActivePanel } from "@jasonbenfield/sharedwebapp/Panel/SingleActivePanel";
-import { PllAppApi } from "../../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../../Api/PllAppApi";
 import { CasePersonEntry } from "../CasePersonEntry";
 import { ConfirmPersonPanel } from "./ConfirmPersonPanel";
 import { EnterCasePersonPanel } from "./EnterCasePersonPanel";

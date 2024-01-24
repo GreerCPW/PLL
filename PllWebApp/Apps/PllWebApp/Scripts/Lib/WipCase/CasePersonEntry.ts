@@ -1,4 +1,4 @@
-import { PllAppApi } from "../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../Api/PllAppApi";
 
 export class CasePersonEntry {
     constructor(private readonly pllClient: PllAppApi, private readonly casePerson: IWipCasePersonModel) {

@@ -1,4 +1,4 @@
-import { CalciteShellView } from "@greercpw/giswebapp/Map/Views/CalciteShellView";
+import { CalciteShellView } from "pll_giswebapp/Map/Views/CalciteShellView";
 import { BasicComponentView } from "@jasonbenfield/sharedwebapp/Views/BasicComponentView";
 import { BlockView } from "@jasonbenfield/sharedwebapp/Views/BlockView";
 

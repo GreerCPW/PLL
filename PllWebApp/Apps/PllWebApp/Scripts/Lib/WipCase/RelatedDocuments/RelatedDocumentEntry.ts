@@ -1,4 +1,4 @@
-import { PllAppApi } from "../../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../../Api/PllAppApi";
 
 export class RelatedDocumentEntry {
     private _isDeleted = false;

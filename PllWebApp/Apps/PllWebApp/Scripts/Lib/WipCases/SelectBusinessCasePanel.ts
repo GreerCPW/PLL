@@ -4,7 +4,7 @@ import { TextButtonListGroupItemView } from "@jasonbenfield/sharedwebapp/Views/L
 import { BusinessCaseListItem } from "./BusinessCaseListItem";
 import { SelectBusinessCasePanelView } from "./SelectBusinessCasePanelView";
 import { MessageAlert } from "@jasonbenfield/sharedwebapp/Components/MessageAlert";
-import { PllAppApi } from "../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../Api/PllAppApi";
 
 interface IResult {
     back?: boolean;

@@ -4,7 +4,7 @@ import { ListGroup } from "@jasonbenfield/sharedwebapp/Components/ListGroup";
 import { MessageAlert } from "@jasonbenfield/sharedwebapp/Components/MessageAlert";
 import { TextComponent } from "@jasonbenfield/sharedwebapp/Components/TextComponent";
 import { DelayedAction } from "@jasonbenfield/sharedwebapp/DelayedAction";
-import { PllAppApi } from "../../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../../Api/PllAppApi";
 import { CasePersonEntry } from "../CasePersonEntry";
 import { PersonListItem } from "./PersonListItem";
 import { PersonListItemView } from "./PersonListItemView";

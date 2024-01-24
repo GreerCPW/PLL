@@ -1,7 +1,7 @@
 import { Awaitable } from "@jasonbenfield/sharedwebapp/Awaitable";
 import { Command } from "@jasonbenfield/sharedwebapp/Components/Command";
 import { MessageAlert } from "@jasonbenfield/sharedwebapp/Components/MessageAlert";
-import { PllAppApi } from "../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../Api/PllAppApi";
 import { CaseCard } from "./CaseCard";
 import { CasePanelView } from "./CasePanelView";
 import { DataGroupContainerComponent } from "./DataGroupContainerComponent";

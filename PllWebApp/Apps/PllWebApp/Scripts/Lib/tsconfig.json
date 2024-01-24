@@ -19,7 +19,9 @@
   },
   "include": [
     "./**/*.ts",
-    "../../node_modules/@jasonbenfield/**/*.d.ts"
+    "../../node_modules/@jasonbenfield/**/*.d.ts",
+    "../../node_modules/pll_giswebapp/**/*.d.ts",
+    "../../node_modules/utilityaccount_businesswebapp/**/*.d.ts"
   ],
   "exclude": [
     "Imports",

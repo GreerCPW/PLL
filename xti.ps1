@@ -16,5 +16,5 @@ function Xti-UpdatePllDb {
 }
 
 function Xti-UpdateNpm {
-	Start-Process -FilePath "cmd.exe" -WorkingDirectory PllWebApp/Apps/PllWebApp -ArgumentList "/c", "npm install @jasonbenfield/sharedwebapp@latest csr_utilityaccountwebapp@npm:@greercpw/utilityaccountwebapp@latest pll_giswebapp@npm:@greercpw/giswebapp@latest"
+	Start-Process -FilePath "cmd.exe" -WorkingDirectory PllWebApp/Apps/PllWebApp -ArgumentList "/c", "npm install @jasonbenfield/sharedwebapp@latest pll_giswebapp@npm:@greercpw/giswebapp@latest"
 }
