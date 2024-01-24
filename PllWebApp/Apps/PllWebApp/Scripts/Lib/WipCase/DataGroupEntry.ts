@@ -1,4 +1,4 @@
-import { PllAppApi } from "../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../Api/PllAppApi";
 import { DataGroupDetailEntry } from "./DataGroupDetailEntry";
 
 export class DataGroupEntry {

@@ -4,7 +4,7 @@ import { InputControl } from "@jasonbenfield/sharedwebapp/Components/InputContro
 import { MessageAlert } from "@jasonbenfield/sharedwebapp/Components/MessageAlert";
 import { DelayedAction } from "@jasonbenfield/sharedwebapp/DelayedAction";
 import { TextToTextViewValue } from "@jasonbenfield/sharedwebapp/Forms/TextToTextViewValue";
-import { PllAppApi } from "../../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../../Api/PllAppApi";
 import { EditPersonPanelView } from "./EditPersonPanelView";
 
 interface IResult {

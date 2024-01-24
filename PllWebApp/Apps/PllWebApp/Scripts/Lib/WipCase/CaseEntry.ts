@@ -1,4 +1,4 @@
-import { PllAppApi } from "../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../Api/PllAppApi";
 import { DataGroupEntry } from "./DataGroupEntry";
 import { CasePersonEntry } from "./CasePersonEntry";
 import { RelatedDocumentEntry } from "./RelatedDocuments/RelatedDocumentEntry";

@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@greercpw/giswebapp": "^1.1.26",
-    "@jasonbenfield/sharedwebapp": "^1.9.26"
+    "@jasonbenfield/sharedwebapp": "^1.9.26",
+    "pll_giswebapp": "npm:@greercpw/giswebapp@^1.1.65"
   },
   "devDependencies": {
     "css-loader": "^6.7.2",

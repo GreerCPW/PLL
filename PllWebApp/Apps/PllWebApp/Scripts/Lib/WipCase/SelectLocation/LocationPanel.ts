@@ -4,7 +4,7 @@ import { TextComponent } from "@jasonbenfield/sharedwebapp/Components/TextCompon
 import { CaseEntry } from "../CaseEntry";
 import { LocationPanelView } from "./LocationPanelView";
 import { MapComponent } from "../../MapComponent";
-import { PllAppApi } from "../../../Lib/Api/PllAppApi";
+import { PllAppApi } from "../../Api/PllAppApi";
 
 interface IResult {
     back?: boolean;
