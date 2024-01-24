@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="7.0.0" />
+		<PackageReference Include="XTI_HubAppClient.ServiceApp.Extensions" Version="1.4.43" />
+    <PackageReference Include="XTI_ScheduledJobsAppClient" Version="1.0.21" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\PllWebApp\Lib\XTI_PllAppClient\XTI_PllAppClient.csproj" />
+		<ProjectReference Include="..\..\Internal\CPW_PllImplementations\CPW_PllImplementations.csproj" />
+		<ProjectReference Include="..\..\Internal\XTI_PllServiceAppApi\XTI_PllServiceAppApi.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+// Generated Code
+namespace XTI_PllAppClient;
+public sealed partial class WipCaseGroup : AppClientGroup
+{
+    public WipCaseGroup(IHttpClientFactory httpClientFactory, XtiTokenAccessor xtiTokenAccessor, AppClientUrl clientUrl, AppClientOptions options) : base(httpClientFactory, xtiTokenAccessor, clientUrl, options, "WipCase")
+    {
+        Actions = new WipCaseGroupActions(AddRelatedDocument: CreatePostAction<AddRelatedDocumentRequest, WipCaseRelatedDocumentModel>("AddRelatedDocument"), DeleteCase: CreatePostAction<int, EmptyActionResult>("DeleteCase"), CompleteCase: CreatePostAction<int, long>("CompleteCase"), DeleteRelatedDocument: CreatePostAction<int, EmptyActionResult>("DeleteRelatedDocument"), DownloadRelatedDocument: CreateFileAction<int>("DownloadRelatedDocument"), EditPerson: CreatePostAction<EditPersonRequest, CustomerPersonModel>("EditPerson"), EditRelatedDocument: CreatePostAction<EditWipCaseRelatedDocumentRequest, EmptyActionResult>("EditRelatedDocument"), GeocodeAddress: CreatePostAction<string, AddressCandidateModel[]>("GeocodeAddress"), GetCaseDetail: CreatePostAction<int, WipCaseDetailModel>("GetCaseDetail"), GetPeople: CreatePostAction<EmptyRequest, CustomerPersonModel[]>("GetPeople"), Index: CreateGetAction<GetWipCaseRequest>("Index"), ResetCasePerson: CreatePostAction<int, CustomerPersonModel>("ResetCasePerson"), ReverseGeocode: CreatePostAction<LatLongCoordinates, string>("ReverseGeocode"), SaveCasePerson: CreatePostAction<SaveWipCasePersonRequest, CustomerPersonModel>("SaveCasePerson"), SaveDataGroup: CreatePostAction<SaveDataGroupRequest, EmptyActionResult>("SaveDataGroup"), SaveLocation: CreatePostAction<SaveLocationRequest, EmptyActionResult>("SaveLocation"), SaveMapLocation: CreatePostAction<SaveMapLocationRequest, WipCaseModel>("SaveMapLocation"), SaveNewPerson: CreatePostAction<SaveNewPersonRequest, CustomerPersonModel>("SaveNewPerson"), SaveServiceTypes: CreatePostAction<SaveServiceTypesRequest, EmptyActionResult>("SaveServiceTypes"));
+    }
+
+    public WipCaseGroupActions Actions { get; }
+
+    public Task<WipCaseRelatedDocumentModel> AddRelatedDocument(AddRelatedDocumentRequest model, CancellationToken ct = default) => Actions.AddRelatedDocument.Post("", model, ct);
+    public Task<EmptyActionResult> DeleteCase(int model, CancellationToken ct = default) => Actions.DeleteCase.Post("", model, ct);
+    public Task<long> CompleteCase(int model, CancellationToken ct = default) => Actions.CompleteCase.Post("", model, ct);
+    public Task<EmptyActionResult> DeleteRelatedDocument(int model, CancellationToken ct = default) => Actions.DeleteRelatedDocument.Post("", model, ct);
+    public Task<AppClientFileResult> DownloadRelatedDocument(int model, CancellationToken ct = default) => Actions.DownloadRelatedDocument.GetFile("", model, ct);
+    public Task<CustomerPersonModel> EditPerson(EditPersonRequest model, CancellationToken ct = default) => Actions.EditPerson.Post("", model, ct);
+    public Task<EmptyActionResult> EditRelatedDocument(EditWipCaseRelatedDocumentRequest model, CancellationToken ct = default) => Actions.EditRelatedDocument.Post("", model, ct);
+    public Task<AddressCandidateModel[]> GeocodeAddress(string model, CancellationToken ct = default) => Actions.GeocodeAddress.Post("", model, ct);
+    public Task<WipCaseDetailModel> GetCaseDetail(int model, CancellationToken ct = default) => Actions.GetCaseDetail.Post("", model, ct);
+    public Task<CustomerPersonModel[]> GetPeople(CancellationToken ct = default) => Actions.GetPeople.Post("", new EmptyRequest(), ct);
+    public Task<CustomerPersonModel> ResetCasePerson(int model, CancellationToken ct = default) => Actions.ResetCasePerson.Post("", model, ct);
+    public Task<string> ReverseGeocode(LatLongCoordinates model, CancellationToken ct = default) => Actions.ReverseGeocode.Post("", model, ct);
+    public Task<CustomerPersonModel> SaveCasePerson(SaveWipCasePersonRequest model, CancellationToken ct = default) => Actions.SaveCasePerson.Post("", model, ct);
+    public Task<EmptyActionResult> SaveDataGroup(SaveDataGroupRequest model, CancellationToken ct = default) => Actions.SaveDataGroup.Post("", model, ct);
+    public Task<EmptyActionResult> SaveLocation(SaveLocationRequest model, CancellationToken ct = default) => Actions.SaveLocation.Post("", model, ct);
+    public Task<WipCaseModel> SaveMapLocation(SaveMapLocationRequest model, CancellationToken ct = default) => Actions.SaveMapLocation.Post("", model, ct);
+    public Task<CustomerPersonModel> SaveNewPerson(SaveNewPersonRequest model, CancellationToken ct = default) => Actions.SaveNewPerson.Post("", model, ct);
+    public Task<EmptyActionResult> SaveServiceTypes(SaveServiceTypesRequest model, CancellationToken ct = default) => Actions.SaveServiceTypes.Post("", model, ct);
+    public sealed record WipCaseGroupActions(AppClientPostAction<AddRelatedDocumentRequest, WipCaseRelatedDocumentModel> AddRelatedDocument, AppClientPostAction<int, EmptyActionResult> DeleteCase, AppClientPostAction<int, long> CompleteCase, AppClientPostAction<int, EmptyActionResult> DeleteRelatedDocument, AppClientFileAction<int> DownloadRelatedDocument, AppClientPostAction<EditPersonRequest, CustomerPersonModel> EditPerson, AppClientPostAction<EditWipCaseRelatedDocumentRequest, EmptyActionResult> EditRelatedDocument, AppClientPostAction<string, AddressCandidateModel[]> GeocodeAddress, AppClientPostAction<int, WipCaseDetailModel> GetCaseDetail, AppClientPostAction<EmptyRequest, CustomerPersonModel[]> GetPeople, AppClientGetAction<GetWipCaseRequest> Index, AppClientPostAction<int, CustomerPersonModel> ResetCasePerson, AppClientPostAction<LatLongCoordinates, string> ReverseGeocode, AppClientPostAction<SaveWipCasePersonRequest, CustomerPersonModel> SaveCasePerson, AppClientPostAction<SaveDataGroupRequest, EmptyActionResult> SaveDataGroup, AppClientPostAction<SaveLocationRequest, EmptyActionResult> SaveLocation, AppClientPostAction<SaveMapLocationRequest, WipCaseModel> SaveMapLocation, AppClientPostAction<SaveNewPersonRequest, CustomerPersonModel> SaveNewPerson, AppClientPostAction<SaveServiceTypesRequest, EmptyActionResult> SaveServiceTypes);
+}

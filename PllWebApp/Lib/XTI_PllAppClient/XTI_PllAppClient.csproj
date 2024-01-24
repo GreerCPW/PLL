@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Description>Web App Client for $(XtiAppName) $(XtiVersion)</Description>
+		<PackageTags>$(XtiVersion);$(XtiAppName);XTI Web App Client</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="XTI_WebAppClient" Version="1.8.39" />
+    <PackageReference Include="CPW_Gis.Abstractions" Version="1.1.65" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CPW_Pll.Abstractions\CPW_Pll.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>
