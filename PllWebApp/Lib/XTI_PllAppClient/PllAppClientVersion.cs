@@ -12,7 +12,7 @@ public sealed class PllAppClientVersion
         string value;
         if (hostEnv.IsProduction())
         {
-            value = "V42";
+            value = "V2";
         }
         else
         {

@@ -173,6 +173,7 @@ interface IGetInspectionsRequest {
 interface IInspectionModel {
 	ID: number;
 	OfficeUrl: string;
+	RespondUrl: string;
 	TemplateName: string;
 	Status: ICwActivityStatus;
 	Observation: string;
@@ -215,6 +216,7 @@ interface IGetSrvReqsRequest {
 interface IServiceRequestModel {
 	ID: number;
 	OfficeUrl: string;
+	RespondUrl: string;
 	Status: ICwActivityStatus;
 	ServiceAddress: IAddress;
 	ProblemCode: IProblemCode;
@@ -253,6 +255,7 @@ interface IGetWorkOrdersRequest {
 interface IWorkOrderModel {
 	ID: string;
 	OfficeUrl: string;
+	RespondUrl: string;
 	ApplyToEntity: ICwEntityType;
 	FacilityID: string;
 	Description: IWorkOrderDescription;
@@ -267,7 +270,7 @@ interface IWorkOrderModel {
 	TimeClosed: Date;
 	Resolution: IWorkOrderResolution;
 	AssetGroup: string;
-	LegacyBillingKey: string;
+	ExternalKey: string;
 	AccountNumber: string;
 	LocationNumber: string;
 	TimeCancelled: Date;

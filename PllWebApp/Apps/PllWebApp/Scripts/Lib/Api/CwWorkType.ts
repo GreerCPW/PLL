@@ -7,6 +7,7 @@ export class CwWorkTypes extends NumericValues<CwWorkType> {
 		public readonly NotSet: CwWorkType,
 		public readonly TurnOnService: CwWorkType,
 		public readonly TurnOffService: CwWorkType,
+		public readonly TransferService: CwWorkType,
 		public readonly ReconnectService: CwWorkType,
 		public readonly CutMeterForNonPay: CwWorkType,
 		public readonly CheckForStillCut: CwWorkType,
@@ -24,7 +25,7 @@ export class CwWorkTypes extends NumericValues<CwWorkType> {
 		public readonly TransferLightToNewAccount: CwWorkType,
 		public readonly Restock: CwWorkType
 	) {
-		super([NotSet,TurnOnService,TurnOffService,ReconnectService,CutMeterForNonPay,CheckForStillCut,ReplaceMeter,ReplaceErt,RemoveMeter,InstallMeterAndTurnOn,ReadMeter,FixMeterNumber,TurnOnLight,TurnOffLight,ReplaceLight,RemoveLight,InstallLight,TransferLightToNewAccount,Restock]);
+		super([NotSet,TurnOnService,TurnOffService,TransferService,ReconnectService,CutMeterForNonPay,CheckForStillCut,ReplaceMeter,ReplaceErt,RemoveMeter,InstallMeterAndTurnOn,ReadMeter,FixMeterNumber,TurnOnLight,TurnOffLight,ReplaceLight,RemoveLight,InstallLight,TransferLightToNewAccount,Restock]);
 	}
 }
 
@@ -33,6 +34,7 @@ export class CwWorkType extends NumericValue implements ICwWorkType {
 		new CwWorkType(0, 'Not Set'),
 		new CwWorkType(5, 'Turn On Service'),
 		new CwWorkType(10, 'Turn Off Service'),
+		new CwWorkType(11, 'Transfer Service'),
 		new CwWorkType(15, 'Reconnect Service'),
 		new CwWorkType(20, 'Cut Meter For Non Pay'),
 		new CwWorkType(25, 'Check For Still Cut'),
