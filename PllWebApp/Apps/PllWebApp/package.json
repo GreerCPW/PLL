@@ -1,0 +1,35 @@
+{
+  "name": "@greercpw/pllwebapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github:greercpw/Customer",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@greercpw/giswebapp": "^1.1.26",
+    "@jasonbenfield/sharedwebapp": "^1.9.26"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "file-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "html-loader": "^2.1.2",
+    "mini-css-extract-plugin": "^2.0.0",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.63.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

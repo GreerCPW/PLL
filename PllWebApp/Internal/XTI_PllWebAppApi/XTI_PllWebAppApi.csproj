@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="XTI_App.Extensions" Version="1.8.39" />
+		<PackageReference Include="XTI_WebApp.Api" Version="1.8.39" />
+    <PackageReference Include="CPW_Gis.Abstractions" Version="1.1.65" />
+    <PackageReference Include="CPW_UtilityAccount.Abstractions" Version="1.3.24" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CPW_PllDB.EF\CPW_PllDB.EF.csproj" />
+	</ItemGroup>
+
+</Project>

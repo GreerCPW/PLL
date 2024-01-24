@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XTI_CityworksAppClient" Version="1.0.54" />
+    <PackageReference Include="XTI_GisAppClient" Version="1.1.65" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XTI_PllWebAppApi\XTI_PllWebAppApi.csproj" />
+  </ItemGroup>
+
+</Project>

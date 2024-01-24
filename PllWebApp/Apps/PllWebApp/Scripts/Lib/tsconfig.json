@@ -1,0 +1,29 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "lib": [ "es2020", "dom" ],
+    "module": "ES2020",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es2020",
+    "importHelpers": true,
+    "baseUrl": ".",
+    "typeRoots": [
+      "../../node_modules/@types"
+    ]
+  },
+  "include": [
+    "./**/*.ts",
+    "../../node_modules/@jasonbenfield/**/*.d.ts"
+  ],
+  "exclude": [
+    "Imports",
+    "node_modules",
+    "wwwroot"
+  ]
+}

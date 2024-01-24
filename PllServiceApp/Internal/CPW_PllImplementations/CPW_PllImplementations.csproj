@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XTI_CityworksAppClient" Version="1.0.54" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PllWebApp\Lib\XTI_PllAppClient\XTI_PllAppClient.csproj" />
+    <ProjectReference Include="..\CPW_HandlePllPaymentReceived\CPW_HandlePllPaymentReceived.csproj" />
+  </ItemGroup>
+
+</Project>
